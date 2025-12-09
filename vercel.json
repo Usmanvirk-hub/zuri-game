@@ -3,73 +3,33 @@
     {
       "source": "/Build/(.*)",
       "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cross-Origin-Embedder-Policy", "value": "require-corp" },
+        { "key": "Cross-Origin-Opener-Policy", "value": "same-origin" }
       ]
     },
     {
       "source": "/Build/.*\\.gz$",
       "headers": [
-        {
-          "key": "Content-Encoding",
-          "value": "gzip"
-        }
-      ]
-    },
-    {
-      "source": "/Build/.*\\.wasm\\.gz$",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/wasm"
-        }
-      ]
-    },
-    {
-      "source": "/Build/.*\\.js\\.gz$",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    },
-    {
-      "source": "/Build/.*\\.data\\.gz$",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/octet-stream"
-        }
+        { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
       "source": "/Build/.*\\.wasm$",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/wasm"
-        }
+        { "key": "Content-Type", "value": "application/wasm" }
       ]
     },
     {
       "source": "/Build/.*\\.js$",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
+        { "key": "Content-Type", "value": "application/javascript" }
       ]
     },
     {
       "source": "/Build/.*\\.data$",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/octet-stream"
-        }
+        { "key": "Content-Type", "value": "application/octet-stream" }
       ]
     }
   ],
@@ -80,4 +40,3 @@
     }
   ]
 }
-
